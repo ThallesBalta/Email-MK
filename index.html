@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+    <!-- start CSS/Style -->
+    <style>
+        :root {
+            --darkgreen: #389F68;
+            --lightgreen: #41B978;
+            --blue: #136992;
+            --fontArial: 'Arial', sans-serif;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-color: lightgrey;
+        }
+
+        .principal {
+            width: 80%;
+            max-width: 100%;
+            display: block;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .iconHand {
+            background-color: var(--darkgreen);
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 20px solid var(--lightgreen);
+            margin-top: 10px;
+        }
+
+        .iconAndText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--blue);
+        }
+
+        .welcomeTitle {
+            font-size: 75px;
+            font-family: var(--fontArial);
+            color: white;
+            margin-bottom: 5%;
+        }
+
+        .paragraph {
+            margin: 5%;
+        }
+
+        .textParagraph {
+            font-size: 20px;
+            font-family: var(--fontArial);
+            color: #000000;
+        }
+
+        .buttonLogin {
+            margin: 5%;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 25px;
+            color: var(--lightgreen);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-decoration: none;
+            font-size: 20px;
+            overflow: hidden;
+            transition: 0.2s;
+            border-radius: 3px;
+            height: 25px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a:hover {
+            color: var(--blue);
+            background: var(--lightgreen);
+            transition-delay: 1s;
+
+        }
+
+        a span {
+            position: absolute;
+            display: block;
+        }
+
+        a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--lightgreen));
+        }
+
+        a:hover span:nth-child(1) {
+            left: 100%;
+            transition: 1s;
+        }
+
+        a span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(180deg, transparent, var(--lightgreen));
+        }
+
+        a:hover span:nth-child(3) {
+            right: 100%;
+            transition: 1s;
+            transition-delay: 0.5s;
+        }
+
+        a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, var(--lightgreen));
+        }
+
+        a:hover span:nth-child(2) {
+            top: 100%;
+            transition: 1s;
+            transition-delay: 0.25s;
+        }
+
+        a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, var(--lightgreen));
+        }
+
+        a:hover span:nth-child(4) {
+            bottom: 100%;
+            transition: 1s;
+            transition-delay: 0.75s;
+        }
+    </style>
+    <!--ending CSS/Style -->
+
+</head>
+
+<body>
+    <!-- principal page -->
+    <div class="principal">
+        <!-- icon hand and text -->
+        <div class="iconAndText">
+            <!-- icon hand-->
+            <div class="iconHand">
+                <i class="fa-solid fa-handshake" style="font-size: 100px; color: white;"></i>
+            </div>
+            <p class="welcomeTitle">Seja Bem vindo !</p>
+        </div>
+        <div class="paragraph">
+            <p class="textParagraph">Muito obrigado por sua compra! Estamos felizes em tê-lo como cliente e
+                esperamos que você aproveite ao máximo o seu tempo no nosso aplicativo. Caso tenha qualquer dúvida ou
+                precise de assistência, nossa
+                equipe está à disposição para ajudar.</p>
+            <br>
+            <p class="textParagraph">Fique atento ao seu email para atualizações sobre o envio e
+                novidades exclusivas. 
+                Agradecemos por confiar no Tserve e esperamos vê-lo novamente em breve</p>
+        </div>
+        <div class="buttonLogin">
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Fazer Login
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
